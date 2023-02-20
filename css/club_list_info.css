@@ -1,0 +1,189 @@
+.wrap {
+    width: 100%;
+    min-height: 100%;
+    background: #000;
+    padding-bottom: 70px;
+}
+.header {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+.header > .club {
+    position: relative;
+}
+.header > .club::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.09);
+}
+.header > .club img {
+    width: 100%;
+    height: 280px;
+    object-fit: fill;
+}
+.header .btn-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 9999;
+    cursor: pointer;
+}
+.header .btn-back img {
+    width: 10px;
+    height: auto;
+}
+.content {
+    margin: 20px 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #b1b1b1;
+}
+.club__info {
+    margin-top: 15px;
+}
+.club__name {
+    font-size: 24px;
+    letter-spacing: -0.42px;
+    font-weight: var(--semibold);
+    color: #fff;
+    margin-bottom: 5px;
+}
+.club__address {
+    font-size: 15px;
+    letter-spacing: -0.1px;
+    font-weight: var(--regular);
+    color: #b1b1b1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.awareness {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 5px;
+    grid-gap: 5px;
+    font-size: 14px;
+    font-weight: var(--medium);
+    color: #b1b1b1;
+    margin-top: 5px;
+}
+.sns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    grid-gap: 15px;
+    margin-top: 20px;
+}
+.sns a {
+    width: 30px;
+    height: 30px;
+}
+.sns a img {
+    width: 100%;
+}
+.infomation {
+    margin: 20px 20px;
+}
+.infomation > div {
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 15px;
+}
+.option {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(218, 220, 224);
+}
+.option:not(:first-child) {
+    margin-top: 10px;
+}
+.option h2 {
+    font-size: 14px;
+    color: rgb(60, 64, 67);
+}
+.option__info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    grid-gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.option__info div {
+    min-width: 45%;
+}
+.option__info div img {
+    width: 16px;
+}
+.option__info div span {
+    font-size: 15px;
+    color: rgb(60, 64, 67);
+}
+
+.fot__bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    background: #000;
+    box-sizing: border-box;
+    z-index: 9999;
+}
+.reservation__info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.reservation__info span {
+    color: #d1d1d1;
+}
+.reservation__price {
+    font-size: 15px;
+}
+.reservation__date {
+    font-size: 13px;
+    text-decoration: underline;
+}
+.btn-reservation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 20px;
+}
+.btn-reservation::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 40%;
+    background: rgba(255, 255, 255, 0.2);
+}
+.btn-reservation span {
+    font-size: 16px;
+    color: #fff;
+}
